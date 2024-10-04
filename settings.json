@@ -37,7 +37,6 @@
     "build": "folder-purple-outline",
     "builder": "folder-purple-outline",
     "class": "folder-red",
-    "classes": "folder-red",
     "data": "folder-database",
     "functions": "folder-blue",
     "hooks": "folder-target",
@@ -55,7 +54,6 @@
   "breadcrumbs.enabled": false,
   "codeium.enableCodeLens": false,
   "cSpell.language": "en,pt-BR",
-  "cSpell.userWords": ["geist", "stylesheet"],
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorStyle": "block-outline",
@@ -81,6 +79,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "bold",
   "window.commandCenter": false,
+  "window.doubleClickIconToClose": true,
   "window.menuBarVisibility": "hidden",
   "window.titleBarStyle": "native",
   "workbench.activityBar.location": "hidden",
@@ -95,9 +94,19 @@
 
   /* CUSTOM OBJECT CONFIG */
   "workbench.colorCustomizations": {
-    "tab.inactiveBackground": "#0f0f0f",
     "tab.activeBackground": "#1d1d1d",
     "tab.activeBorderTop": "#f79d5c",
-    "tab.activeBorder": "#f79d5c"
-  }
+    "tab.inactiveBackground": "#0f0f0f"
+  },
+
+  /* UNKNOWN WORDS CONFIG */
+  "cSpell.userWords": [
+    "codeium",
+    "drawio",
+    "esbenp",
+    "geist",
+    "hediet",
+    "lockb",
+    "stylesheet"
+  ]
 }
