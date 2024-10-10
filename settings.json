@@ -68,6 +68,7 @@
   "editor.rulers": [80, 120],
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
+  "editor.stickyScroll.enabled": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "bounded",
   "explorer.compactFolders": false,
@@ -79,6 +80,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "bold",
   "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
   "window.doubleClickIconToClose": true,
   "window.menuBarVisibility": "hidden",
   "window.titleBarStyle": "native",
@@ -88,15 +90,23 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "symbols",
-  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": false,
 
   /* CUSTOM OBJECT CONFIG */
   "workbench.colorCustomizations": {
-    "tab.activeBackground": "#1d1d1d",
-    "tab.activeBorderTop": "#f79d5c",
-    "tab.inactiveBackground": "#0f0f0f"
+    "editor.background": "#000000",
+    "editorGroupHeader.tabsBackground": "#000000",
+    "sideBar.background": "#070707",
+    "sideBar.foreground": "#FCFCFC",
+    "sideBarTitle.foreground": "#FCFCFC",
+    "tab.activeBackground": "#080808",
+    "tab.activeBorderTop": "#F0AC1B",
+    "tab.hoverBackground": "#212121",
+    "tab.inactiveBackground": "#111111",
+    "tab.inactiveForeground": "#ECECEC",
+    "terminal.background": "#060606",
+    "welcomePage.background": "#020202"
   },
 
   /* UNKNOWN WORDS CONFIG */
@@ -107,6 +117,7 @@
     "geist",
     "hediet",
     "lockb",
+    "shadcn",
     "stylesheet"
   ]
 }
