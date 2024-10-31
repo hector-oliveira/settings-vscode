@@ -1,33 +1,23 @@
 {
-  /** APC CONFIG */
-  "apc.electron": {
-    "titleBarStyle": "hidden"
-  },
-  "apc.font.family": "Inter",
-  "apc.header": {
-    "height": 36
-  },
-  "apc.listRow": {
-    "height": 26
-  },
-  "apc.stylesheet": {
-    ".editor-actions": "display: none",
-    ".title-label > h2": "display: none"
-  },
-
   /** FILE NESTING */
   "explorer.fileNesting.patterns": {
     "next.config.mjs": "next-env*",
-    "package.json": ".eslint*, .prettier*, eslint*, prettier*, tsconfig*, vite*, .babel*, jest*, package-lock*, yarn*, pnpm-lock*, bun.lockb",
-    "tailwind.config*": "tailwind.config*, postcss.config*"
+    "package.json": "tsconfig*, vite*, .babel*, jest*, package-lock*, yarn*, pnpm-lock*, bun.lockb",
+    "tailwind.config*": "tailwind.config*, postcss.config*",
+    "App.tsx": "App.css, index.css, main.tsx, vite-env*",
+    "eslint*": ".eslint*, .prettier*, prettier*, "
   },
 
   /** FILES ASSOCIATIONS */
   "symbols.files.associations": {
     "*.i.ts": "dts",
+    "*.txt": "text",
+    "*.hook.ts": "oxlint",
+    "*.interface.ts": "exe",
     "*.test.jsx": "react-test",
     "*.test.ts": "ts-test",
-    "*.test.tsx": "react-test"
+    "*.test.tsx": "react-test",
+    "tsconfig.ts": "tune"
   },
 
   /** FOLDERS ASSOCIATIONS */
@@ -47,13 +37,14 @@
     "tests": "folder-red-code",
     "themes": "folder-blue-code",
     "ts": "folder-blue-code",
-    "typescript": "folder-blue-code"
+    "typescript": "folder-blue-code",
+    "pages": "folder-app"
   },
 
   /** GENERAL CONFIG */
   "breadcrumbs.enabled": false,
   "codeium.enableCodeLens": false,
-  "cSpell.language": "en,pt-BR",
+  "cSpell.language": "en,pt-BR,pt",
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorStyle": "block-outline",
@@ -63,6 +54,7 @@
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.lineHeight": 1.8,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [80, 120],
@@ -72,52 +64,92 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "bounded",
   "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
-  "hediet.vscode-drawio.resizeImages": null,
+  "quokka.compactMessageOutput": false,
   "symbols.hidesExplorerArrows": false,
   "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "terminal.integrated.env.windows": {},
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "bold",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "never",
   "window.doubleClickIconToClose": true,
   "window.menuBarVisibility": "hidden",
-  "window.titleBarStyle": "native",
   "workbench.activityBar.location": "hidden",
-  "workbench.colorTheme": "Vesper ++",
+  "workbench.colorTheme": "Ayu Dark Lighter",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "symbols",
+  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": false,
+  "workbench.tree.indent": 14,
 
   /* CUSTOM OBJECT CONFIG */
   "workbench.colorCustomizations": {
-    "editor.background": "#000000",
+    "editor.background": "#020202",
+    "editor.lineHighlightBorder": "#000000",
     "editorGroupHeader.tabsBackground": "#000000",
-    "sideBar.background": "#070707",
+    "editorGutter.background": "#020202",
+    "list.activeSelectionBackground": "#272727",
+    "list.hoverBackground": "#333232",
+    "panel.background": "#010101",
+    "panelTitle.activeForeground": "#F1F1F1",
+    "panelTitle.inactiveForeground": "#696969",
+    "sideBar.background": "#060606",
     "sideBar.foreground": "#FCFCFC",
     "sideBarTitle.foreground": "#FCFCFC",
-    "tab.activeBackground": "#080808",
-    "tab.activeBorderTop": "#F0AC1B",
+    "tab.activeBackground": "#060606",
+    "tab.activeBorderTop": "#f9cb00",
     "tab.hoverBackground": "#212121",
-    "tab.inactiveBackground": "#111111",
+    "tab.inactiveBackground": "#0f0f0f",
     "tab.inactiveForeground": "#ECECEC",
-    "terminal.background": "#060606",
-    "welcomePage.background": "#020202"
+    "terminal.background": "#050505",
+    "terminal.foreground": "#cccccc",
+    "terminal.tab.activeBorder": "#F94700",
+    "titleBar.activeBackground": "#000000",
+    "welcomePage.background": "#020202",
+    "input.background": "#0e0d0d",
+    "input.foreground": "#F1F1F1",
+    "dropdown.background": "#0e0d0d",
+    "dropdown.foreground": "#c9c9c9",
+    "quickInput.background": "#0a0a0a",
+    "editorWidget.background": "#111111",
+    "editorWidget.foreground": "#A1A1A1"
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
 
   /* UNKNOWN WORDS CONFIG */
   "cSpell.userWords": [
+    "auths",
     "codeium",
     "drawio",
     "esbenp",
     "geist",
     "hediet",
+    "keystatic",
     "lockb",
+    "oxlint",
+    "quokka",
     "shadcn",
-    "stylesheet"
+    "stylesheet",
+    "trivago",
+    "tseslint"
+  ],
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "pullRequests"
   ]
 }
